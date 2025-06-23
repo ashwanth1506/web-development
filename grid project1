@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Grid</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: bisque;
+      margin: 0;
+    }
+
+    h1, h2, h3, button {
+      font-family: 'Outfit', sans-serif;
+    }
+
+.container {
+  background-color: beige;
+  height: 600px;
+  width: 1000px;
+  margin: 100px auto;
+  box-shadow: black 10px 10px 10px;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+    "one two   two  three"
+    "one four  five three"
+    "six four  five three"
+    "six seven eight eight";
+  gap: 12px;
+  padding: 12px;
+
+  /* REMOVE fixed height */
+  /* height: 500px; */
+}
+
+    .container > div {
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .grid-item1 { grid-area: one; background-color: #fdeee6; }
+    .grid-item2 { grid-area: two; background-color: #7c3aed; color: white; }
+    .grid-item3 { grid-area: three; background-color: #e0d7ff; }
+    .grid-item4 { grid-area: four; background-color: #ffffff; }
+    .grid-item5 { grid-area: five; background-color: #facc15; }
+    .grid-item6 { grid-area: six; background-color: #facc15; }
+    .grid-item7 { grid-area: seven; background-color: #ffffff; }
+    .grid-item8 { grid-area: eight; background-color: #7c3aed; color: white; }
+
+    button {
+      background-color: #fcd34d;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 8px;
+      padding: 0;
+    }
+
+    em {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="grid-item1">
+      <h3>Create and schedule content <em>quicker.</em></h3>
+      <button>Create Post →</button>
+    </div>
+
+    <div class="grid-item2">
+      <h2>Social Media <span style="color: orange;">10x</span> Faster with AI</h2>
+      <p>⭐⭐⭐⭐⭐</p>
+      <small>Over 4,000 5-star reviews</small>
+    </div>
+
+    <div class="grid-item3">
+      <h3>Schedule to social media.</h3>
+      <p><strong>Best Time to Post</strong></p>
+      <ul>
+        <li>Mon</li><li>Tue</li><li>Wed</li><li>Thu</li>
+      </ul>
+      <p><strong>Most Active</strong></p>
+      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <div class="grid-item4">
+      <p><strong>@YourCo</strong><br>12K Followers</p>
+      <p>Manage multiple accounts and platforms.</p>
+    </div>
+
+    <div class="grid-item5">
+      <h3>Maintain a consistent posting schedule.</h3>
+      <p>August 2024 - Week 1</p>
+    </div>
+
+    <div class="grid-item6">
+      <h3>Write your content using AI.</h3>
+      <p>"Give me 5 tips to grow my followers on Instagram"</p>
+      <p>"Certainly! Here are five tips to help you grow your Instagram..."</p>
+    </div>
+
+    <div class="grid-item7">
+      <h3>&gt;56%</h3>
+      <p>faster audience growth</p>
+    </div>
+
+    <div class="grid-item8">
+      <h3>Grow followers with non-stop content.</h3>
+      <p><strong>Follower Growth</strong></p>
+      <p><strong>20,642</strong></p>
+      <p>Followers: <strong>89,532</strong> ↑40%</p>
+    </div>
+
+  </div>
+</body>
+</html>
